@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images-20230619T151220Z-001\Images\close.png" />
+    <None Remove="Images-20230619T151220Z-001\Images\hellokitty.png" />
+    <None Remove="Images-20230619T151220Z-001\Images\mini.png" />
+    <None Remove="Images-20230619T151220Z-001\Images\spiderr.png" />
+    <None Remove="Images-20230619T151220Z-001\Images\user.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images-20230619T151220Z-001\Images\close.png" />
+    <Resource Include="Images-20230619T151220Z-001\Images\hellokitty.png" />
+    <Resource Include="Images-20230619T151220Z-001\Images\mini.png" />
+    <Resource Include="Images-20230619T151220Z-001\Images\spiderr.png" />
+    <Resource Include="Images-20230619T151220Z-001\Images\user.jpg" />
+  </ItemGroup>
+
+</Project>

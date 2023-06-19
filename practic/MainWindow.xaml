@@ -1,0 +1,67 @@
+﻿<Window x:Class="practic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="Hello Kitty" Height="450" Width="800">
+    <Grid Background="LightPink">
+
+        <StackPanel>
+            <Border Background="#FDFDFD" CornerRadius="15" Margin="10" Padding="10" >
+                <Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Border Width="60" Height="60" CornerRadius="30" Margin="15,0,15,0">
+                            <Border.Background >
+                                <ImageBrush ImageSource="/Images-20230619T151220Z-001/Images/hellokitty.png" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                        
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                            <TextBlock Text="Hello Kitty" FontSize="16" FontWeight="Bold" Foreground="#8f8f8f"/>
+                            <TextBlock Text="Baku,Azerbaijan" FontSize="12" Foreground="#8f8f8f"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Button Style="{StaticResource Save_btn}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Style="{StaticResource Icon}" Icon="BookmarkOutline"/>
+                                <TextBlock Style="{StaticResource btnText}" Text="Save Profile"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+
+            <Border Background="#FDFDFD" CornerRadius="15" Margin="10" Padding="10" >
+                <Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Border Width="60" Height="60" CornerRadius="30" Margin="15,0,15,0">
+                            <Border.Background >
+                                <ImageBrush ImageSource="/Images-20230619T151220Z-001/Images/spiderr.png" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                            <TextBlock Text="Spider-Man" FontSize="16" FontWeight="Bold" Foreground="#8f8f8f"/>
+                            <TextBlock Text="Baku,Azerbaijan" FontSize="12" Foreground="#8f8f8f"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Button Style="{StaticResource Save_btn}">
+                            <StackPanel Orientation="Horizontal">
+                                <fa:ImageAwesome Style="{StaticResource Icon}" Icon="BookmarkOutline"/>
+                                <TextBlock Style="{StaticResource btnText}" Text="Save Profile"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+      
+    </Grid>
+</Window>
